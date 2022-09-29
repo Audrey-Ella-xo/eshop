@@ -22,7 +22,7 @@ function Home() {
                         title="IFB 30 L Convection Microwave Oven (30BRC2, Black, With Starter Kit)"
                         price={239.0}
                         rating={4}
-                        image="https://images-na.ssl-images-amazon.com/images/I/81D8pNFmWzL._SL1500_.jpg"
+                        image="https://images-na.ssl-images-amazon.com/images/I/71mEsHyzSCL._SL1000_.jpg"
                     />
                 </div>
                 <div className="home__row">
@@ -30,14 +30,14 @@ function Home() {
                         id="12321343"
                         title="Bennett Mystic 15.6 inch Laptop Shoulder Messenger Sling Office Bag, Water Repellent Fabric for Men and Women (Blue)"
                         price={11.96}
-                        rating={5}
+                        rating={1}
                         image="https://images-na.ssl-images-amazon.com/images/I/71mEsHyzSCL._SL1000_.jpg"
                     />
                     <Product
                         id="49538004"
                         title="IFB 30 L Convection Microwave Oven (30BRC2, Black, With Starter Kit)"
                         price={239.0}
-                        rating={4}
+                        rating={2}
                         image="https://images-na.ssl-images-amazon.com/images/I/81D8pNFmWzL._SL1500_.jpg"
                     />
                     <Product
@@ -53,7 +53,7 @@ function Home() {
                         id="48538094"
                         title="IFB 30 L Convection Microwave Oven (30BRC2, Black, With Starter Kit)"
                         price={239.0}
-                        rating={4}
+                        rating={10}
                         image="https://images-na.ssl-images-amazon.com/images/I/81D8pNFmWzL._SL1500_.jpg"
                     />
                 </div>
