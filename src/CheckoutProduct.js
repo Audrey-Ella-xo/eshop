@@ -4,7 +4,7 @@ import './CheckoutProduct.css'
 function CheckoutProduct() {
   return (
     <div className="checkoutProduct">
-        <img className='checkoutProduct__image' src="#image" alt="#" />
+        <img className='checkoutProduct__image' src="https://images-na.ssl-images-amazon.com/images/I/71mEsHyzSCL._SL1000_.jpg" alt="#" />
         <div className="product__info">
             <p className="checkoutProduct__title">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quas magnam vitae consectetur molestiae! Ipsam maiores facilis illum autem ipsa eveniet sed perspiciatis cupiditate veniam fugit? Exercitationem dolores nesciunt officia.
