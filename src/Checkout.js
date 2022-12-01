@@ -13,6 +13,9 @@ function Checkout() {
             Your shopping basket
           </h2>
           <CheckoutProduct />
+          <CheckoutProduct />
+          <CheckoutProduct />
+          <CheckoutProduct />
         </div>
       </div>
 
