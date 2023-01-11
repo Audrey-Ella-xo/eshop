@@ -1,5 +1,7 @@
 // here we define all the application level states and define actions to make the changes to the state
 
+import { ProductionQuantityLimits } from "@mui/icons-material";
+
 export const initialState = {
     basket: [],
 };
@@ -17,6 +19,26 @@ const reducer = (state, action) => {
                 ...state,
                 basket: [...state.basket, action.item]
             };
+
+        case "REMOVE_FROM_BASKET":
+                const index = state.basket.findIndex(
+                    (basketItem) => basketItem.id === action.id
+                )
+
+                let newBasket = [...state.basket];
+
+                if (index >=0) {
+                    newBasket.splice(index, 1)
+                }else {
+                    console.warn (
+                        `Can't remove ProductionQuantityLimits(id: ${action.id}) as it's not in the basket.`
+                    )
+                }
+
+                return {
+                    ...state,
+                    basket: newBasket
+                }
     
         default:
             return state;
