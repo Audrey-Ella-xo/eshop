@@ -11,12 +11,11 @@ function App() {
     <div className="App">
       {/* Initialize Router */}
       <Router>
-        <Header />
         <Routes>
           <Route path='/login' element={<Login />}/>
-          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/checkout" element={<><Header /><Checkout /></>} />
           {/* Home Route MUST come in last!! */}
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<><Header /><Home /></>} />
         </Routes>
       </Router>
 

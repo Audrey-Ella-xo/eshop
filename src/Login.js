@@ -1,39 +1,39 @@
 import React, { useState } from 'react';
 import './Login.css'
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import StorefrontIcon from '@mui/icons-material/Storefront';
-// import { auth } from "./firebase";
+import { auth } from './firebase';
 
 function Login() {
-    // const history = useHistory();
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    // const signIn = e => {
-    //     e.preventDefault();
+    const signIn = e => {
+        e.preventDefault();
 
-    //     auth
-    //         .signInWithEmailAndPassword(email, password)
-    //         .then(auth => {
-    //             history.push('/');
-    //         })
-    //         .catch(error => alert(error.message))
+        auth
+            .signInWithEmailAndPassword(email, password) //this method is provided by firebase
+            .then(auth => {
+                navigate('/');
+            }) //If sign is succesful, execute then method. if not, execute catch.
+            .catch(error => alert(error.message))
 
-    // }
+    }
 
-    // const register = e => {
-    //     e.preventDefault();
+    const register = e => {
+        e.preventDefault();
 
-    //     auth
-    //         .createUserWithEmailAndPassword(email, password)
-    //         .then((auth) => {
-    //             if (auth) {
-    //                 history.push('/');
-    //             }
-    //         })
-    //         .catch(error => alert(error.message))
+        auth
+            .createUserWithEmailAndPassword(email, password)
+            .then((auth) => {
+                if (auth) {
+                    navigate('/');
+                }
+            })
+            .catch(error => alert(error.message))
 
-    // }
+    }
 
     return (
         <div className='login'> 
